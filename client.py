@@ -16,6 +16,7 @@ from metaclasses import ClientMaker
 # Инициализация клиентского логера
 logger = logging.getLogger('client')
 
+
 # Класс формировки и отправки сообщений на сервер и взаимодействия с пользователем.
 class ClientSender(threading.Thread, metaclass=ClientMaker):
     def __init__(self, account_name, sock):
